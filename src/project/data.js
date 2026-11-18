@@ -3,9 +3,9 @@ export const personalInfo = {
   role: 'Machine Learning & Applied Cryptography Engineer',
   bioShort:
     'MSc Cybersecurity candidate at Nanyang Technological University (NTU), Singapore. I build post-quantum cryptographic systems, zero-knowledge architectures, and geospatial AI pipelines.',
-  email: 'mudit@example.com',
+  email: 'muditchoudhary099@gmail.com',
   location: 'Singapore (NTU)',
-  github: 'https://github.com/mudit-choudhary',
+  github: 'https://github.com/mudit2210',
   linkedin: 'https://www.linkedin.com/in/mudit-choudhary-sg/',
   scholar: 'https://scholar.google.com',
   resumeUrl: '/resume.pdf',
@@ -35,8 +35,8 @@ export const featuredProjects = [
     tags: ['C++', 'Python', 'ML-KEM', 'Dilithium'],
     summary:
       'Comprehensive benchmark suite evaluating post-quantum cryptographic primitives (ML-KEM/Dilithium) against classical asymmetric schemes (RSA/ECC) under varying hardware and network constraints.',
-    github: 'https://github.com/mudit-choudhary',
-    demo: 'https://github.com/mudit-choudhary',
+    github: 'https://github.com/mudit2210',
+    demo: 'https://github.com/mudit2210',
     metrics: [
       { label: 'KeyGen Latency', value: '0.14 ms', sub: 'Kyber-768 / Cortex-A72' },
       { label: 'Peak Memory Overhead', value: '2.4 KB', sub: 'Zero heap fragmentation' },
@@ -59,8 +59,8 @@ export const featuredProjects = [
     tags: ['Node.js', 'AES-GCM', 'Express', 'WebSocket'],
     summary:
       'End-to-end encrypted messaging engine engineered with double-ratchet key rotation, authenticated payload exchange, and zero-knowledge message relaying.',
-    github: 'https://github.com/mudit-choudhary',
-    demo: 'https://github.com/mudit-choudhary',
+    github: 'https://github.com/mudit2210',
+    demo: 'https://github.com/mudit2210',
     metrics: [
       { label: 'Encryption Latency', value: '< 1.2 ms', sub: 'Per-frame AES-256-GCM' },
       { label: 'Relay Knowledge', value: '0 bits', sub: 'Zero plaintext inspection' },
@@ -83,8 +83,8 @@ export const featuredProjects = [
     tags: ['PyTorch', 'GCP', 'AES/RSA', 'GIS'],
     summary:
       'Cloud-native geospatial computer vision pipeline verifying afforestation and carbon-credit claims with cryptographic provenance and tamper-evident audit trails.',
-    github: 'https://github.com/mudit-choudhary',
-    demo: 'https://github.com/mudit-choudhary',
+    github: 'https://github.com/mudit2210',
+    demo: 'https://github.com/mudit2210',
     metrics: [
       { label: 'Records Processed', value: '14.6M+', sub: 'Geospatial records' },
       { label: 'Canopy mAP', value: '91.4%', sub: 'High-res aerial segmentation' },
@@ -107,8 +107,8 @@ export const featuredProjects = [
     tags: ['Python', 'NLP', 'Forensics', 'FastAPI'],
     summary:
       'National award-winning forensic intelligence tool that ingests Cellebrite UFDR forensic extraction reports, automatically correlating suspect timelines and multi-app communication chains.',
-    github: 'https://github.com/mudit-choudhary',
-    demo: 'https://github.com/mudit-choudhary',
+    github: 'https://github.com/mudit2210',
+    demo: 'https://github.com/mudit2210',
     metrics: [
       { label: 'Triage Acceleration', value: '72h → 8min', sub: 'Per standard forensic dump' },
       { label: 'Parsing Speed', value: '100k+/min', sub: 'Structured event records' },
