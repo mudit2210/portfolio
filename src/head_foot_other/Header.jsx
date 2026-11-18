@@ -128,7 +128,7 @@ export default function Header() {
         <div className="flex items-center">
           {isDeepDive ? (
             <Link
-              to="/"
+              to="/#projects"
               className="inline-flex items-center gap-1.5 text-xs font-sans font-medium transition-colors duration-200 py-1.5 px-3 rounded-full border border-[#dfdeda] bg-zinc-50 text-zinc-700 hover:text-zinc-950 hover:bg-white shadow-2xs whitespace-nowrap"
             >
               <span>←</span>

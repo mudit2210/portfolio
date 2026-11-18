@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { featuredProjects } from './data'
 
 export default function ProjectDetail() {
   const { slug } = useParams()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [slug])
+
   const projectIndex = featuredProjects.findIndex((p) => p.slug === slug)
   const project = featuredProjects[projectIndex]
 

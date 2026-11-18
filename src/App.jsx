@@ -4,12 +4,16 @@ import Header from './head_foot_other/Header'
 import Footer from './head_foot_other/Footer'
 import NotFound from './head_foot_other/NotFound'
 import ErrorBoundary from './head_foot_other/ErrorBoundary'
+import ScrollManager from './head_foot_other/ScrollManager'
 import Home from './project/Home'
 import ProjectDetail from './project/ProjectDetail'
 
 function App() {
   return (
     <BrowserRouter>
+      {/* Route & Hash Scroll Restoration Manager */}
+      <ScrollManager />
+
       <div className="min-h-screen bg-[#f4f2ee] text-zinc-900 flex flex-col font-sans selection:bg-zinc-900 selection:text-white">
         {/* Scroll-Reactive Header */}
         <Header />
