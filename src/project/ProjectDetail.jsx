@@ -5,12 +5,33 @@ import { featuredProjects } from './data'
 export default function ProjectDetail() {
   const { slug } = useParams()
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
-  }, [slug])
-
   const projectIndex = featuredProjects.findIndex((p) => p.slug === slug)
   const project = featuredProjects[projectIndex]
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+
+    if (project) {
+      document.title = `${project.title} | Mudit Choudhary`
+      const metaDesc = document.querySelector('meta[name="description"]')
+      if (metaDesc) {
+        metaDesc.setAttribute('content', project.description || project.summary)
+      }
+    } else {
+      document.title = 'Project Not Located | Mudit Choudhary'
+    }
+
+    return () => {
+      document.title = 'Mudit Choudhary | Machine Learning & Applied Cryptography Engineer'
+      const metaDesc = document.querySelector('meta[name="description"]')
+      if (metaDesc) {
+        metaDesc.setAttribute(
+          'content',
+          'Portfolio of Mudit Choudhary — Machine Learning & Applied Cryptography Engineer. MSc Cybersecurity candidate at NTU Singapore specializing in post-quantum cryptography, zero-knowledge architectures, and geospatial AI.'
+        )
+      }
+    }
+  }, [slug, project])
 
   if (!project) {
     return (

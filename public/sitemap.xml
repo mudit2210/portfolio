@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://mudit-choudhary.netlify.app/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Project 1: Post-Quantum Crypto Benchmark -->
+  <url>
+    <loc>https://mudit-choudhary.netlify.app/projects/post-quantum-crypto-benchmark</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Project 2: Zero-Knowledge E2EE Messenger -->
+  <url>
+    <loc>https://mudit-choudhary.netlify.app/projects/zero-knowledge-e2ee-messenger</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Project 3: GeoTree Verification Pipeline -->
+  <url>
+    <loc>https://mudit-choudhary.netlify.app/projects/geotree-verification-pipeline</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Project 4: UFDR Forensic Triage Engine -->
+  <url>
+    <loc>https://mudit-choudhary.netlify.app/projects/ufdr-forensic-triage-engine</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

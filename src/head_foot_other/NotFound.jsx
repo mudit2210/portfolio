@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function NotFound() {
+  useEffect(() => {
+    document.title = '404 - Page Not Located | Mudit Choudhary'
+  }, [])
+
   return (
     <div className="min-h-[calc(100vh-10rem)] flex items-center justify-center px-6 py-20 sm:py-28 animate-fade-in">
       <div className="max-w-md w-full bg-white rounded-2xl border border-[#dfdeda] p-8 sm:p-10 text-center shadow-xs space-y-6">
