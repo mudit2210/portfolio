@@ -16,7 +16,7 @@ export default function About() {
         </span>
       </div>
 
-      <div className="space-y-3 text-sm sm:text-base text-zinc-600 font-light leading-relaxed pt-0.5">
+      <div className="space-y-3 text-sm sm:text-base text-zinc-600 font-light leading-relaxed pt-0.5 text-justify sm:text-left hyphens-auto">
         <p>{aboutNarrative.p1}</p>
         <p>{aboutNarrative.p2}</p>
       </div>

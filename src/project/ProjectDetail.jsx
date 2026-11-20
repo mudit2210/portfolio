@@ -93,13 +93,13 @@ export default function ProjectDetail() {
             project.summary.map((para, pIdx) => (
               <p
                 key={pIdx}
-                className="text-base sm:text-lg text-zinc-700 font-light leading-relaxed w-full"
+                className="text-base sm:text-lg text-zinc-700 font-light leading-relaxed w-full text-justify sm:text-left hyphens-auto"
               >
                 {para}
               </p>
             ))
           ) : (
-            <p className="text-base sm:text-lg text-zinc-700 font-light leading-relaxed w-full">
+            <p className="text-base sm:text-lg text-zinc-700 font-light leading-relaxed w-full text-justify sm:text-left hyphens-auto">
               {project.summary}
             </p>
           )}
@@ -201,13 +201,13 @@ export default function ProjectDetail() {
                       </h3>
                     </div>
                     {Array.isArray(item.bullets) ? (
-                      <ul className="list-disc pl-6 sm:pl-7 space-y-1 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed">
+                      <ul className="list-disc pl-6 sm:pl-7 space-y-1 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed text-justify sm:text-left hyphens-auto">
                         {item.bullets.map((b, bIdx) => (
                           <li key={bIdx}>{b}</li>
                         ))}
                       </ul>
                     ) : (
-                      <p className="pl-6 sm:pl-7 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed">
+                      <p className="pl-6 sm:pl-7 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed text-justify sm:text-left hyphens-auto">
                         {item.detail || item.description}
                       </p>
                     )}
@@ -228,7 +228,7 @@ export default function ProjectDetail() {
                 </span>
               </div>
 
-              <p className="text-sm sm:text-base text-zinc-700 leading-relaxed font-light">
+              <p className="text-sm sm:text-base text-zinc-700 leading-relaxed font-light text-justify sm:text-left hyphens-auto">
                 {project.architecture}
               </p>
 
@@ -250,13 +250,13 @@ export default function ProjectDetail() {
                         </h3>
                       </div>
                       {Array.isArray(item.bullets) ? (
-                        <ul className="list-disc pl-6 sm:pl-7 space-y-1 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed">
+                        <ul className="list-disc pl-6 sm:pl-7 space-y-1 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed text-justify sm:text-left hyphens-auto">
                           {item.bullets.map((b, bIdx) => (
                             <li key={bIdx}>{b}</li>
                           ))}
                         </ul>
                       ) : (
-                        <p className="pl-6 sm:pl-7 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed">
+                        <p className="pl-6 sm:pl-7 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed text-justify sm:text-left hyphens-auto">
                           {item.description}
                         </p>
                       )}
@@ -278,12 +278,12 @@ export default function ProjectDetail() {
                 </span>
               </div>
 
-              <p className="text-sm sm:text-base text-zinc-700 leading-relaxed font-light">
+              <p className="text-sm sm:text-base text-zinc-700 leading-relaxed font-light text-justify sm:text-left hyphens-auto">
                 {project.threatModel}
               </p>
 
               {project.threatModelPoints && project.threatModelPoints.length > 0 && (
-                <ul className="list-disc pl-6 sm:pl-7 space-y-1.5 pt-1 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed">
+                <ul className="list-disc pl-6 sm:pl-7 space-y-1.5 pt-1 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed text-justify sm:text-left hyphens-auto">
                   {project.threatModelPoints.map((item, idx) => (
                     <li key={idx}>
                       {typeof item === 'string' ? (
@@ -314,12 +314,12 @@ export default function ProjectDetail() {
                 </span>
               </div>
 
-              <p className="text-sm sm:text-base text-zinc-700 leading-relaxed font-light">
+              <p className="text-sm sm:text-base text-zinc-700 leading-relaxed font-light text-justify sm:text-left hyphens-auto">
                 {project.tradeoffs}
               </p>
 
               {project.tradeoffPoints && project.tradeoffPoints.length > 0 && (
-                <ul className="list-disc pl-6 sm:pl-7 space-y-1.5 pt-1 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed">
+                <ul className="list-disc pl-6 sm:pl-7 space-y-1.5 pt-1 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed text-justify sm:text-left hyphens-auto">
                   {project.tradeoffPoints.map((item, idx) => (
                     <li key={idx}>
                       {typeof item === 'string' ? (

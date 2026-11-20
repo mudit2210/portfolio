@@ -56,7 +56,7 @@ export default function Experience() {
 
               {/* Description / Summary Narrative */}
               {item.description && (
-                <p className="text-xs sm:text-sm text-zinc-600 font-light leading-relaxed pt-0.5">
+                <p className="text-xs sm:text-sm text-zinc-600 font-light leading-relaxed pt-0.5 text-justify sm:text-left hyphens-auto">
                   {item.description}
                 </p>
               )}
@@ -65,7 +65,7 @@ export default function Experience() {
               {(item.points || item.bullets) && (item.points || item.bullets).length > 0 && (
                 <ul className="pt-1.5 space-y-1.5 text-xs sm:text-sm text-zinc-600 font-light leading-relaxed list-disc list-outside ml-4">
                   {(item.points || item.bullets).map((point, pIdx) => (
-                    <li key={pIdx}>{point}</li>
+                    <li key={pIdx} className="text-justify sm:text-left hyphens-auto">{point}</li>
                   ))}
                 </ul>
               )}

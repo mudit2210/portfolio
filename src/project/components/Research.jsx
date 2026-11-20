@@ -78,7 +78,7 @@ export default function Research() {
               <span className="italic font-normal text-zinc-800">{item.venue}</span>
             </p>
 
-            <p className="text-xs text-zinc-500 font-light leading-relaxed">
+            <p className="text-xs text-zinc-500 font-light leading-relaxed text-justify sm:text-left hyphens-auto">
               {item.abstract}
             </p>
 

@@ -48,7 +48,7 @@ export default function Hero() {
             </p>
 
             {/* Concise Narrative Bio */}
-            <p className="text-sm text-zinc-600 font-light leading-relaxed pt-0.5 max-w-2xl">
+            <p className="text-sm text-zinc-600 font-light leading-relaxed pt-0.5 max-w-2xl text-justify sm:text-left hyphens-auto">
               {personalInfo.bioShort}
             </p>
 

@@ -52,7 +52,7 @@ export default function Projects() {
                 </Link>
               </h3>
 
-              <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed font-light">
+              <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed font-light text-justify sm:text-left hyphens-auto">
                 {project.description}
               </p>
             </div>

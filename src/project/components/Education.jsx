@@ -55,7 +55,7 @@ export default function Education() {
                 </div>
               </div>
 
-              <p className="text-xs sm:text-sm text-zinc-600 font-light leading-relaxed pt-0.5">
+              <p className="text-xs sm:text-sm text-zinc-600 font-light leading-relaxed pt-0.5 text-justify sm:text-left hyphens-auto">
                 {item.description}
               </p>
             </div>
