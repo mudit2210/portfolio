@@ -29,10 +29,21 @@ export default function Projects() {
             className="p-4 sm:p-4.5 rounded-xl border border-[#dfdeda] bg-zinc-50/50 hover:bg-white hover:border-zinc-400 hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
           >
             <div className="space-y-2.5">
-              <div className="text-[11px] font-mono text-zinc-400 uppercase tracking-widest">
-                <span>{project.numeral}</span>
-                <span className="mx-1.5">/</span>
-                <span className="text-zinc-700 font-semibold">{project.category}</span>
+              <div className="flex items-center justify-between">
+                <div className="text-[11px] font-mono text-zinc-400 uppercase tracking-widest">
+                  <span>{project.numeral}</span>
+                  <span className="mx-1.5">/</span>
+                  <span className="text-zinc-700 font-semibold">{project.category}</span>
+                </div>
+                {project.logo && (
+                  <div className="w-8 h-8 rounded-lg overflow-hidden bg-white border border-[#dfdeda] p-1 flex items-center justify-center shadow-2xs">
+                    <img
+                      src={project.logo}
+                      alt={project.title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                )}
               </div>
 
               <h3 className="text-base font-bold text-zinc-950 group-hover:text-zinc-800 transition-colors">

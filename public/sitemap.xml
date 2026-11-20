@@ -8,18 +8,18 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Project 1: Post-Quantum Crypto Benchmark -->
+  <!-- Project 1: The Dream Welfare Society Platform -->
   <url>
-    <loc>https://mudit-choudhary.netlify.app/projects/post-quantum-crypto-benchmark</loc>
-    <lastmod>2026-11-19</lastmod>
+    <loc>https://mudit-choudhary.netlify.app/projects/the-dream-welfare-society</loc>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Project 2: Zero-Knowledge E2EE Messenger -->
+  <!-- Project 2: Haryalo Rajasthan Platform -->
   <url>
-    <loc>https://mudit-choudhary.netlify.app/projects/zero-knowledge-e2ee-messenger</loc>
-    <lastmod>2026-11-19</lastmod>
+    <loc>https://mudit-choudhary.netlify.app/projects/haryalo-raj-guide</loc>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

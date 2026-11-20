@@ -26,6 +26,14 @@ function App() {
               <Route path="/" element={<Home />} />
 
               {/* Individual Project Case Study Deep-Dives */}
+              <Route
+                path="/projects/zero-knowledge-e2ee-messenger"
+                element={<Navigate to="/projects/haryalo-raj-guide" replace />}
+              />
+              <Route
+                path="/projects/post-quantum-crypto-benchmark"
+                element={<Navigate to="/projects/the-dream-welfare-society" replace />}
+              />
               <Route path="/projects/:slug" element={<ProjectDetail />} />
 
               {/* Direct Section Redirects */}
