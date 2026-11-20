@@ -41,6 +41,7 @@ export default function Header() {
     { label: 'Research', href: isHome ? '#research' : '/#research' },
     { label: 'Education', href: isHome ? '#education' : '/#education' },
     { label: 'Skills', href: isHome ? '#skills' : '/#skills' },
+    { label: 'Certs', href: isHome ? '#certifications' : '/#certifications' },
     { label: 'Contact', href: isHome ? '#contact' : '/#contact' },
     { label: 'CV', href: personalInfo.resumeUrl, isExternal: true },
   ]

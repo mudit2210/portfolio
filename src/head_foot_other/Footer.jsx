@@ -4,7 +4,7 @@ import { personalInfo } from '../project/data'
 export default function Footer() {
   return (
     <footer className="border-t border-[#dfdeda] py-10 bg-white text-zinc-600 text-xs font-mono">
-      <div className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p>© 2026 {personalInfo.name}. Applied Cryptography & Machine Learning.</p>
         <div className="flex items-center gap-5 text-zinc-600">
           <a

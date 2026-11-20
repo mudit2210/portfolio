@@ -1,5 +1,5 @@
 import React from 'react'
-import { certificationsList, technicalStack } from '../data'
+import { technicalStack } from '../data'
 
 function getSkillList(skills) {
   if (Array.isArray(skills)) return skills
@@ -18,18 +18,18 @@ export default function Skills() {
       id="skills"
       className="bg-white rounded-2xl border border-[#dfdeda] shadow-xs overflow-hidden scroll-mt-24"
     >
-      {/* Section Header (Consistent with Experience / Education / Research) */}
+      {/* Section Header */}
       <div className="px-6 py-4 sm:px-8 sm:py-4.5 flex items-baseline justify-between border-b border-[#dfdeda]">
         <div>
           <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-950 font-sans">
-            Technical Stack & Certifications
+            Technical Stack
           </h2>
           <p className="text-xs font-mono text-zinc-400 uppercase tracking-wider mt-1">
-            Core Competencies & Verified Credentials
+            Core Engineering & Cryptography Competencies
           </p>
         </div>
         <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest hidden sm:inline-block">
-          Verified Stack
+          Core Domains
         </span>
       </div>
 
@@ -59,7 +59,7 @@ export default function Skills() {
                 {skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-2.5 py-1 rounded-md text-xs font-mono bg-zinc-50 border border-[#dfdeda] text-zinc-700 hover:border-zinc-400 hover:bg-white hover:text-zinc-950 transition-colors"
+                    className="px-2.5 py-1 rounded-md text-xs font-mono bg-zinc-50 border border-[#dfdeda] text-zinc-700 hover:border-zinc-400 hover:bg-white hover:text-zinc-950 transition-colors shadow-2xs"
                   >
                     {skill}
                   </span>
@@ -68,57 +68,6 @@ export default function Skills() {
             </div>
           )
         })}
-      </div>
-
-      {/* Licenses & Certifications Sub-Section */}
-      <div className="border-t border-[#dfdeda] bg-zinc-50/30 px-6 py-4.5 sm:px-8 sm:py-5 space-y-3.5">
-        <div className="flex items-baseline justify-between">
-          <h3 className="text-xs font-mono uppercase tracking-wider text-zinc-500 font-semibold">
-            Licenses & Certifications
-          </h3>
-          <span className="text-xs font-mono text-zinc-400">
-            {certificationsList.length} Credentials
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {certificationsList.map((cert) => {
-            const certSkills = getSkillList(cert.skills)
-            return (
-              <div
-                key={cert.title}
-                className="p-5 rounded-xl bg-white border border-[#dfdeda] hover:border-zinc-400 transition-all space-y-2.5 shadow-2xs"
-              >
-                <div className="flex items-baseline justify-between gap-2">
-                  <span className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-0.5 rounded bg-zinc-50 border border-[#dfdeda] text-zinc-700 font-semibold">
-                    {cert.issuer}
-                  </span>
-                  <span className="text-xs font-mono text-zinc-400">{cert.period}</span>
-                </div>
-
-                <div>
-                  <h4 className="text-sm font-bold text-zinc-950 font-sans tracking-tight">
-                    {cert.title}
-                  </h4>
-                  <p className="text-xs font-mono text-zinc-500 mt-0.5">{cert.credentialId}</p>
-                </div>
-
-                {certSkills.length > 0 && (
-                  <div className="flex flex-wrap gap-1.5 pt-1">
-                    {certSkills.map((s) => (
-                      <span
-                        key={s}
-                        className="px-2 py-0.5 rounded text-[10px] font-mono bg-zinc-50 border border-[#dfdeda] text-zinc-600"
-                      >
-                        {s}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )
-          })}
-        </div>
       </div>
     </section>
   )

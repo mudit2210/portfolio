@@ -35,7 +35,7 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <div className="max-w-4xl mx-auto px-6 pt-32 pb-24 text-center space-y-4">
+      <div className="max-w-5xl mx-auto px-6 pt-32 pb-24 text-center space-y-4">
         <span className="text-xs font-mono uppercase tracking-widest text-zinc-400">
           404 — Not Found
         </span>
@@ -62,7 +62,7 @@ export default function ProjectDetail() {
     projectIndex < featuredProjects.length - 1 ? featuredProjects[projectIndex + 1] : null
 
   return (
-    <article className="max-w-4xl mx-auto px-6 pt-24 sm:pt-28 pb-16 space-y-12 animate-fade-in">
+    <article className="max-w-5xl mx-auto px-6 pt-24 sm:pt-28 pb-16 space-y-12 animate-fade-in">
       {/* 1. Header Block */}
       <section className="space-y-4 pb-8 border-b border-[#dfdeda]">
         <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-zinc-500">

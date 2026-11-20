@@ -275,6 +275,16 @@ export const educationList = [
     description:
       'Graduated with honors (8.83/10 CGPA). Winner of the Smart India Hackathon (SIH) National Finals for forensic extraction intelligence. Led technical teams with focus on cryptographic algorithms and distributed systems.',
   },
+  {
+    period: '2018 – 2020',
+    degree: 'Senior Secondary (Class XII) — Science (PCM + IP)',
+    institution: 'Maharaja Sawai Bhawani Singh School (MSBSS), Jaipur',
+    location: 'Jaipur, Rajasthan, India',
+    logo: '/msbss-logo.png',
+    image: '/msbss-logo.png',
+    description:
+      'Completed Senior Secondary Education majoring in Physics, Chemistry, Mathematics (PCM), and Informatics Practices (IP), establishing core foundations in analytical problem solving, algorithms, and software programming.',
+  },
 ]
 
 export const experienceAndEducation = [
@@ -296,20 +306,58 @@ export const experienceAndEducation = [
 
 export const certificationsList = [
   {
+    title: 'Google Cybersecurity Professional Certificate',
+    issuer: 'Google',
+    degree: 'Professional Certificate (9 Courses)',
+    period: 'Jan 2026',
+    location: 'Coursera Verified',
+    logo: '/google-logo.svg',
+    credentialId: 'BEF3Z5YH43EC',
+    link: 'https://www.coursera.org/account/accomplishments/professional-cert/certificate/BEF3Z5YH43EC',
+    image: null,
+    description:
+      'Completed 9 rigorous courses developed by Google, covering Python automation, Linux and SQL administration, SIEM security event correlation, and Intrusion Detection Systems (IDS). Hands-on practice in identifying cyber threats, vulnerabilities, and incident response mitigation.',
+    skills: [
+      'Python Automation',
+      'Linux & SQL',
+      'SIEM Tools',
+      'Threats & Vulnerabilities',
+      'Network Security',
+    ],
+  },
+  {
     title: 'Microsoft Certified: Azure Fundamentals (AZ-900)',
     issuer: 'Microsoft',
-    period: 'Issued 2023',
-    credentialId: 'AZ-900',
-    link: 'https://learn.microsoft.com',
+    degree: 'Cloud Architecture & Security Fundamentals',
+    period: '2023',
+    location: 'Microsoft Learn Verified',
+    logo: '/microsoft-logo.svg',
+    credentialId: '809961c17ed0fb7a',
+    link: 'https://learn.microsoft.com/en-us/users/muditchoudhary-9606/credentials/809961c17ed0fb7a?ref=https%3A%2F%2Fwww.linkedin.com%2F',
+    image: null,
+    description:
+      'Demonstrated foundational knowledge of cloud concepts, Azure architecture and core services, along with Azure management, governance, security, and compliance.',
     skills: ['Microsoft Azure', 'Cloud Security', 'IAM', 'Virtual Networks'],
   },
   {
-    title: 'IBM Cloud Essentials / Cloud Core',
+    title: 'Journey to Cloud: Envisioning Your Solution',
     issuer: 'IBM',
-    period: 'Issued 2022',
-    credentialId: 'Verified Credly Badge',
-    link: 'https://www.credly.com',
-    skills: ['IBM Cloud', 'Containerization', 'Cloud Security'],
+    degree: 'Cloud Transformation & Solution Architecture',
+    period: '2023',
+    location: 'Credly Verified',
+    logo: '/ibm-journey-to-cloud-badge.png',
+    credentialId: '92e10d14-4d7b-4cda-b768-774bc68d995b',
+    link: 'https://www.credly.com/badges/92e10d14-4d7b-4cda-b768-774bc68d995b/public_url',
+    image: null,
+    description:
+      'Demonstrated understanding of digital transformation drivers enabled by cloud technologies, delivery models (IaaS, SaaS, PaaS), Agile & IBM Garage Method, Enterprise Design Thinking, and deploying cloud pilot applications using IBM Code Engine.',
+    skills: [
+      'IBM Cloud',
+      'Solution Architecture',
+      'IaaS / PaaS / SaaS',
+      'IBM Code Engine',
+      'Design Thinking',
+    ],
   },
 ]
 

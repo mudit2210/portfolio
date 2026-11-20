@@ -35,6 +35,7 @@ function App() {
               <Route path="/projects" element={<Navigate to="/#projects" replace />} />
               <Route path="/research" element={<Navigate to="/#research" replace />} />
               <Route path="/skills" element={<Navigate to="/#skills" replace />} />
+              <Route path="/certifications" element={<Navigate to="/#certifications" replace />} />
               <Route path="/contact" element={<Navigate to="/#contact" replace />} />
 
               {/* 404 Fallback */}

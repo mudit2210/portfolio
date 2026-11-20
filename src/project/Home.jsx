@@ -6,6 +6,7 @@ import Education from './components/Education'
 import Projects from './components/Projects'
 import Research from './components/Research'
 import Skills from './components/Skills'
+import Certifications from './components/Certifications'
 import Contact from './components/Contact'
 
 export default function Home() {
@@ -27,13 +28,14 @@ export default function Home() {
 
       {/* 2. Main Profile Sections (LinkedIn Card Flow) */}
       <div className="py-6 sm:py-10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-4.5 sm:space-y-5">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-4.5 sm:space-y-5">
           <About />
           <Experience />
           <Projects />
           <Research />
           <Education />
           <Skills />
+          <Certifications />
           <Contact />
         </div>
       </div>
